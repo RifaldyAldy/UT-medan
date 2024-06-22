@@ -1,0 +1,22 @@
+tes programming PHP UT Medan
+
+1. file database.php : Class terdiri dari property dan method
+   
+   property : $host,$uname,$pass,$db sebagai syarat terhubung mysql
+              $conn sebagai variabel penampung init dari koneksi mysqli
+
+   method : * __construct() konstruktor inisialisasi koneksi kedatabase menggunakan msqli, alasan memakai mysqli daripada mysql adalah karena mysql sudah deprecated dan tertinggal sehingga tidak layak digunakan untuk keamanan
+            * tampil() mengambil semua data tabel mahasiswa dari database db_akademik dan langsung disimpan pada array $data
+            * simpan($nama,$alamat,$usia) menyimpan data ke tabel mahasiswa dengan parameter binding agar lebih aman
+            * hapus($id) menghapus data row mahasiswa berdasarkan ID yang diterima
+
+2. file index.php : file utama hanya sebagai inisialisasi class koneksi ke database agar dapat digunakan
+
+3. file simpan.php : script untuk menangani form penyimpanan data mahasiswa dengan method POST
+
+4. file tampil.php : script utama untuk menampilkan data tabel mahasiswa ke layar dalam bentuk tabel
+
+5. file hapus.php : script untuk menghapus data row mahasiswa, script ini tidak terlalu terasa dilayar, hanya berjalan dilatar belakang
+   
+            
+            
